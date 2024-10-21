@@ -3,12 +3,40 @@ body {
     color: black;
 }
 
+header {
+    padding: 5rem;
+    min-height: 8rem;
+}
+
 h1 {
-    color: white;
+    color: black;
+}
+
+main {
+    background-color: brown;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.article-container {
+    width: 30rem;
+    margin-left: 55%;
+    padding-bottom: 3rem;
+    background-color: rgb(202, 146, 155);
+}
+
+.article-container:last-child {
+    padding-bottom: 0;
 }
 
 article {
-    width: 500px;
-    margin-bottom: 40px;
-    border: 3px solid red;
+    border: 3px solid white;
+}
+
+footer {
+    min-height: 8rem;
+}
+
+a {
+    color: rgb(201, 131, 2);
 }
