@@ -1,8 +1,7 @@
 {% extends 'blog/base.html' %}
-
 {% block inhoud %}
 <article class="post">
-    {% is post.published_date %}
+    {% if post.published_date %}
     <time class="date">
         {{ post.published_date }}
     </time>

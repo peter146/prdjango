@@ -8,8 +8,11 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts}) #if the dictionary with the posts variable is missing, no posts will be displayed!
 
 def post_detail(request, pk):
-    try:
-        post = get_object_or_404(Post, pk=pk)
-    except Post.DoesNotExist: 
-        print(f'Post with PK {pk} does not exist.')
+    post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_inhoud.html', {'post': post})
+
+    # try:
+    #     post = get_object_or_404(Post, pk=pk)
+    # except Post.DoesNotExist: 
+    #     print(f'Post with PK {pk} does not exist.')
+    # return render(request, 'blog/post_inhoud.html', {'post': post})
